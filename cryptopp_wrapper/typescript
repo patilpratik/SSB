@@ -1,0 +1,58 @@
+Script started on Saturday 01 November 2014 02:00:02 PM IST
+]0;pratik@BaseLVM:~/programing/MS/project/cryptopp_wrapper]7;file://BaseLVM/home/pratik/programing/MS/project/cryptopp_wrapper[?1034h[pratik@BaseLVM cryptopp_wrapper]$ make
+g++  -g -ffast-math -Wall -fopenmp  -std=c++0x -I/home/pratik/programing/MS/project/cryptopp_wrapper/include -I/home/pratik/programing/MS/project/include  -c obj/../src/cryptopp_wrapper.cpp -o obj/cryptopp_wrapper.o
+[01m[Kobj/../src/cryptopp_wrapper.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[Kobj/../src/cryptopp_wrapper.cpp:131:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd::ifstream[m[K’ has no member named ‘[01m[Kwrite[m[K’
+     file1.write(ciphertext.c_str(), ciphertext.size());
+[01;32m[K           ^[m[K
+In file included from [01m[K/home/pratik/programing/MS/project/include/crypto++/secblock.h:7:0[m[K,
+                 from [01m[K/home/pratik/programing/MS/project/include/crypto++/modes.h:8[m[K,
+                 from [01m[K/home/pratik/programing/MS/project/cryptopp_wrapper/include/cryptopp_wrapper.h:22[m[K,
+                 from [01m[Kobj/../src/cryptopp_wrapper.cpp:18[m[K:
+/home/pratik/programing/MS/project/include/crypto++/algparam.h: In instantiation of ‘[01m[KCryptoPP::ConstByteArrayParameter::ConstByteArrayParameter(const T&, bool) [with T = std::basic_string<char>][m[K’:
+[01m[K/home/pratik/programing/MS/project/include/crypto++/filters.h:793:132:[m[K   required from here
+[01m[K/home/pratik/programing/MS/project/include/crypto++/misc.h:58:118:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kcryptopp_assert_26[m[K’ [-Wunused-variable]
+ #define CRYPTOPP_COMPILE_ASSERT_INSTANCE(assertion, instance) static CompileAssert<(assertion)> CRYPTOPP_ASSERT_JOIN(cryptopp_assert_, instance)
+[01;32m[K                                                                                                                      ^[m[K
+[01m[K/home/pratik/programing/MS/project/include/crypto++/misc.h:61:39:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KCRYPTOPP_DO_ASSERT_JOIN[m[K’
+ #define CRYPTOPP_DO_ASSERT_JOIN(X, Y) X##Y
+[01;32m[K                                       ^[m[K
+[01m[K/home/pratik/programing/MS/project/include/crypto++/misc.h:58:97:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KCRYPTOPP_ASSERT_JOIN[m[K’
+ #define CRYPTOPP_COMPILE_ASSERT_INSTANCE(assertion, instance) static CompileAssert<(assertion)> CRYPTOPP_ASSERT_JOIN(cryptopp_assert_, instance)
+[01;32m[K                                                                                                 ^[m[K
+[01m[K/home/pratik/programing/MS/project/include/crypto++/misc.h:54:44:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KCRYPTOPP_COMPILE_ASSERT_INSTANCE[m[K’
+ #define CRYPTOPP_COMPILE_ASSERT(assertion) CRYPTOPP_COMPILE_ASSERT_INSTANCE(assertion, __LINE__)
+[01;32m[K                                            ^[m[K
+[01m[K/home/pratik/programing/MS/project/include/crypto++/algparam.h:26:9:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KCRYPTOPP_COMPILE_ASSERT[m[K’
+         CRYPTOPP_COMPILE_ASSERT(sizeof(CPP_TYPENAME T::value_type) == 1);
+[01;32m[K         ^[m[K
+In file included from [01m[K/home/pratik/programing/MS/project/include/crypto++/modes.h:12:0[m[K,
+                 from [01m[K/home/pratik/programing/MS/project/cryptopp_wrapper/include/cryptopp_wrapper.h:22[m[K,
+                 from [01m[Kobj/../src/cryptopp_wrapper.cpp:18[m[K:
+/home/pratik/programing/MS/project/include/crypto++/algparam.h: In instantiation of ‘[01m[Kvoid CryptoPP::AlgorithmParametersTemplate<T>::MoveInto(void*) const [with T = const int*][m[K’:
+[01m[Kobj/../src/cryptopp_wrapper.cpp:150:1:[m[K   required from here
+[01m[K/home/pratik/programing/MS/project/include/crypto++/algparam.h:322:35:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kp[m[K’ [-Wunused-variable]
+   AlgorithmParametersTemplate<T>* p = new(buffer) AlgorithmParametersTemplate<T>(*this);
+[01;32m[K                                   ^[m[K
+/home/pratik/programing/MS/project/include/crypto++/algparam.h: In instantiation of ‘[01m[Kvoid CryptoPP::AlgorithmParametersTemplate<T>::MoveInto(void*) const [with T = unsigned char][m[K’:
+[01m[Kobj/../src/cryptopp_wrapper.cpp:150:1:[m[K   required from here
+[01m[K/home/pratik/programing/MS/project/include/crypto++/algparam.h:322:35:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kp[m[K’ [-Wunused-variable]
+/home/pratik/programing/MS/project/include/crypto++/algparam.h: In instantiation of ‘[01m[Kvoid CryptoPP::AlgorithmParametersTemplate<T>::MoveInto(void*) const [with T = const unsigned char*][m[K’:
+[01m[Kobj/../src/cryptopp_wrapper.cpp:150:1:[m[K   required from here
+[01m[K/home/pratik/programing/MS/project/include/crypto++/algparam.h:322:35:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kp[m[K’ [-Wunused-variable]
+/home/pratik/programing/MS/project/include/crypto++/algparam.h: In instantiation of ‘[01m[Kvoid CryptoPP::AlgorithmParametersTemplate<T>::MoveInto(void*) const [with T = CryptoPP::RandomNumberGenerator*][m[K’:
+[01m[Kobj/../src/cryptopp_wrapper.cpp:150:1:[m[K   required from here
+[01m[K/home/pratik/programing/MS/project/include/crypto++/algparam.h:322:35:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kp[m[K’ [-Wunused-variable]
+In file included from [01m[K/home/pratik/programing/MS/project/include/crypto++/secblock.h:7:0[m[K,
+                 from [01m[K/home/pratik/programing/MS/project/include/crypto++/modes.h:8[m[K,
+                 from [01m[K/home/pratik/programing/MS/project/cryptopp_wrapper/include/cryptopp_wrapper.h:22[m[K,
+                 from [01m[Kobj/../src/cryptopp_wrapper.cpp:18[m[K:
+[01m[K/home/pratik/programing/MS/project/include/crypto++/misc.h:[m[K At global scope:
+[01m[K/home/pratik/programing/MS/project/include/crypto++/misc.h:548:20:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstd::string CryptoPP::StringNarrow(const wchar_t*, bool)[m[K’ defined but not used [-Wunused-function]
+ static std::string StringNarrow(const wchar_t *str, bool throwOnError = true)
+[01;32m[K                    ^[m[K
+make: *** [obj/cryptopp_wrapper.o] Error 1
+]0;pratik@BaseLVM:~/programing/MS/project/cryptopp_wrapper]7;file://BaseLVM/home/pratik/programing/MS/project/cryptopp_wrapper[pratik@BaseLVM cryptopp_wrapper]$ exit
+exit
+
+Script done on Saturday 01 November 2014 02:00:05 PM IST
