@@ -3,6 +3,7 @@
 #include <QMessageBox>
 #include "file_splitter/ssb_file.h"
 
+using namespace SSB;
 AddWindow::AddWindow (QWidget *parent, const QString& file) :
     ui (new Ui::AddWindow), QDialog (parent), inputFile (file.toStdString ()), isAddedStatus (
 	false)

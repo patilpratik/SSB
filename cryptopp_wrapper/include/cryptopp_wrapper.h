@@ -47,7 +47,7 @@ namespace SSB
 /// 
 /// \brief This class simplifies the use of crypto++ library. 
 ///
-///It is a wrapper class that does all the needed processing for encrypting and decrypting with selected algorithm
+/// It is a wrapper class that does all the needed processing for encrypting and decrypting with selected algorithm
 /// Currently only AES algorithm is supported in this class.
 /// \todo Add remaining cryptographic algorithms.
 

@@ -193,5 +193,5 @@ int main(int argc, char** argv)
     cout<<"hash is :"<<hash_data<<endl;
     return 0;
   }
-}
 #endif
+}

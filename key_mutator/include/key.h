@@ -34,6 +34,7 @@
 
 #include <map>
 #include <sstream>        // std::istringstream
+#include "crypto++/modes.h" // byte
 ///
 /// \todo move this template StrToNum to utility header.
 ///
@@ -54,10 +55,10 @@ template<typename T>
     ss << Number;
     return ss.str ();
   }
+//class KEY;
+//#include "cryptopp_wrapper/cryptopp_wrapper.h" // byte
 namespace SSB
 {
-  class KEY;
-#include "cryptopp_wrapper/cryptopp_wrapper.h" // byte
 
 ///
 /// \brief This class is to hold the key values.

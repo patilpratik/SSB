@@ -35,12 +35,13 @@
 /*               along with this program.  If not, see <http://www.gnu.org/licenses/>.              */
 /****************************************************************************************************/
 
+#include "A_CLI_Interface.h"
+
 namespace SSB
 {
 #ifndef SSB_CLI_INTERFACE_H
 #define SSB_CLI_INTERFACE_H
 
-#include "A_CLI_Interface.h"
 
 #define SSB_VERSION "1.0.0"
 ///

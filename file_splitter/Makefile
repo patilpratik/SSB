@@ -29,8 +29,16 @@ all: $(OBJECTS)
 	@echo "<----------------------- making file_splitter -------------------->"
 	$(CXX) $(CXXFLAGS) $(INCLUDE) $(OBJECTS) -o $(APPNAME) $(LIBLINK) $(LIBS)
 
-objects:$(OBJECTS)
+objects: obj $(OBJECTS)
 
+obj:
+	if test -d obj; \
+		then echo obj dir exists; \
+	else \
+		echo Making obj; \
+		mkdir obj; \
+	fi
+	
 obj/cmdline.o: src/cmdline.c
 	$(CC) -Wno-unused-but-set-variable -c $< -o $@
 

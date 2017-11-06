@@ -55,10 +55,19 @@ NVCCFLAGS     := $(GENCODE_FLAGS) --compiler-options -fno-strict-aliasing -linei
 
 
 
-all: make_modules $(OBJECTS)
+all: obj make_modules $(OBJECTS)
 	@echo "<----------------------- making $(APP) -------------------->"
 	$(CXX) $(CXXFLAGS) $(INCLUDE) $(OBJECTS) -o $(APPNAME) $(LIBLINK) $(LIBS) $(STATICLINK)
 #	strip --strip-debug $(APPNAME)
+
+obj:
+	if test -d obj; \
+		then echo obj dir exists; \
+	else \
+		echo Making obj; \
+		mkdir obj; \
+	fi
+	
 
 obj/cmdline.o: src/cmdline.c
 	$(CC) -Wno-unused-but-set-variable -c $< -o $@

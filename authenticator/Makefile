@@ -25,12 +25,20 @@ LN   := ln
 #CXX  := mpicxx
 #NVCC := /usr/local/cuda/bin/nvcc
 
-all: $(OBJECTS)
+all: obj $(OBJECTS)
 	@echo "<----------------------- making Authenticator -------------------->"
 	$(CXX) $(CXXFLAGS) $(INCLUDE) $(OBJECTS) -o $(APPNAME) $(LIBLINK) $(LIBS)
 
 objects:$(OBJECTS)
 
+obj:
+	if test -d obj; \
+		then echo obj dir exists; \
+	else \
+		echo Making obj; \
+		mkdir obj; \
+	fi
+	
 obj/cmdline.o: src/cmdline.c
 	$(CC) -Wno-unused-but-set-variable -c $< -o $@
 

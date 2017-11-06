@@ -8,6 +8,9 @@
 #include "file_splitter/ssb_file.h"
 #include <vector>
 #include <QTimer>
+
+using namespace SSB;
+
 void
 MainWindow::readFileList ()
 {

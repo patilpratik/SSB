@@ -361,7 +361,6 @@ mainwindow.o: SecureStorageBox/mainwindow.cpp SecureStorageBox/mainwindow.h \
 		../include/file_splitter/ssb_pool.h \
 		../include/file_splitter/ssb_setting.h \
 		../include/key_mutator/key.h \
-		../include/cryptopp_wrapper/cryptopp_wrapper.h \
 		../include/crypto++/modes.h \
 		../include/crypto++/cryptlib.h \
 		../include/crypto++/config.h \
@@ -380,6 +379,8 @@ mainwindow.o: SecureStorageBox/mainwindow.cpp SecureStorageBox/mainwindow.h \
 		../include/crypto++/cpu.h \
 		../include/crypto++/algparam.h \
 		../include/crypto++/integer.h \
+		../include/file_splitter/ssb_chunk.h \
+		../include/cryptopp_wrapper/cryptopp_wrapper.h \
 		../include/crypto++/aes.h \
 		../include/crypto++/rijndael.h \
 		../include/crypto++/filters.h \
@@ -388,7 +389,6 @@ mainwindow.o: SecureStorageBox/mainwindow.cpp SecureStorageBox/mainwindow.h \
 		../include/crypto++/basecode.h \
 		../include/crypto++/sha.h \
 		../include/crypto++/iterhash.h \
-		../include/file_splitter/ssb_chunk.h \
 		../include/file_splitter/ssb_error.h \
 		../include/file_splitter/ssb_file.h \
 		../include/key_mutator/key_mutator.h
